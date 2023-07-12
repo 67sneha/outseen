@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Award</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="main">
+        <table border="0" cellspacing="48">
+               <tr>
+                   <td><img src="image/new logo.jpeg" height="100px" width="100px"></td>
+                   <td><a href="main.html" target="_child">Home</a></td>
+                   <td><a href="About%20me.html">About Me</a></td>
+                   <td><a href="Academic.html"> Academic</link></a></td>
+                   <td><a href="Award.html" target="_self">Award & achievements </a></td>
+                   <td><a href="contact.html" target="_self">Contact</a></td>
+                   <td><input type="button" name="butt" value="Resume" class="button"></input></td>
+               </tr>
+           </table>
+       </nav>
+       <canvas id="webcanva" height="30px" style="margin-left:159px;"></canvas>
+    <h1 class="acdhead">Award</h1>
+    <img src="image/trophy_1f3c6.png" height="80px" width="70px" style="margin-left:13%;">
+    <ul>
+        <li>When I was in 10<sup>th</sup> class, i was achieved <b>92% in board exams.</b>
+        <li>I achieved a medal in <b>Cultural knowledge Examination.</b></li>
+        <li>Participation in <b>Dance Compitition organized by LBS College in 15<sup>th</sup> Agust 2022.</b></li>
+    <li>Participation  in <b>Cultural Committee.</b></li>
+    
+    </ul>
+   
+</body>
+</html>
+<script>
+    var web = document.getElementById("webcanva");
+    var can = web.getContext("2d");
+    var gra = can.createLinearGradient(100,300,500,200);
+    gra.addColorStop(0,"red");
+    gra.addColorStop(0.5,"blue");
+    gra.addColorStop(0.6,"red");
+    can.font = "23px Arial";
+    can.fillStyle = gra;
+    can.fillText("AWARD & ACHIEVEMENT",25,25);
+</script>

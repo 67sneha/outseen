@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="main.css">
+    </head>
+<body>
+    <nav class="main">
+        <table border="0" cellspacing="48">
+               <tr>
+                   <td><img src="image/new logo.jpeg" height="100px" width="100px"></td>
+                   <td><a href="main.html" target="_child">Home</a></td>
+                   <td><a href="About%20me.html">About Me</a></td>
+                   <td><a href="Academic.html"> Academic</link></a></td>
+                   <td><a href="Award.html" target="_self">Award & achievements </a></td>
+                   <td><a href="contact.html" target="_self">Contact</a></td>
+                   <td><input type="button" name="butt" value="Resume" class="button"></input></td>
+               </tr>
+           </table>
+       </nav>
+       <canvas id="webcanva" height="30px" style="margin-left:159px;"></canvas>
+    <h2 class="cothead2">Your Message</h2>
+    <div class="parent">
+    <div class="child1">
+        <p class="paramap">Swing by for a cup of coffee, or leave us a message</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3457.865426182667!2d77.08200003944773!3d22.35256110592285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1666977184238!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="child2">
+            <form>
+               <p class="para">First Name</p>
+                <input type="text" size="90" maxlength="15" placeholder="Your name" class="color"><br>
+                <br>
+                <p class="para">Last Name</p>
+                
+                <input type="text" size="90" maxlength="15" placeholder="Your last name" class="color"><br>
+                <br>
+                <p class="para">Country</p>
+                <select name="slc" >
+                    <option >India</option>
+                    <option>Amerika</option>
+                    <option>Autralia</option>
+                    <option>South Korea</option>
+                </select><br><br>
+                <p class="para">Subject</p>
+                <textarea name="texta" id="" cols="80" rows="10" placeholder="write here..."></textarea><br><br><br>
+                <input type="button" name="buttonc" value="submit" style="border:1px solid green; background-color:green; padding:2% 5%";>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+<script>
+    var web = document.getElementById("webcanva");
+    var can = web.getContext("2d");
+    var gra = can.createLinearGradient(100,300,500,200);
+    gra.addColorStop(0,"red");
+    gra.addColorStop(0.5,"blue");
+    gra.addColorStop(0.6,"red");
+    can.font = "23px Arial";
+    can.fillStyle = gra;
+    can.fillText("CONTACT",25,25);
+</script>

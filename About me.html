@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about me</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        
+
+
+    </style>
+</head>
+<body>
+    <nav class="main">
+        <table border="0" cellspacing="48">
+               <tr>
+                   <td><img src="image/new logo.jpeg" height="100px" width="100px"></td>
+                   <td><a href="main.html" target="_child">Home</a></td>
+                   <td><a href="About%20me.html">About Me</a></td>
+                   <td><a href="Academic.html"> Academic</link></a></td>
+                   <td><a href="Award.html" target="_self">Award & achievements </a></td>
+                   <td><a href="contact.html" target="_self">Contact</a></td>
+                   <td><input type="button" name="butt" value="Resume" class="button"></input></td>
+               </tr>
+           </table>
+       </nav>
+       <canvas id="webcanva"style="margin-left:159px;" height="30px"></canvas>
+    <h1 class="abouthe2">Objective</h1>
+    <p class="aboutpara">
+        To excel in the field of IT & Technical working and to be part of Sundar Pichai team with challenging environment to achieve high career growth through a continuous process of learning Technical languages & keeping myself dynamic, active, visionary & competitive in the changing my future scenario.
+    </p>
+    <h1 class="abouth2">Experience</h1>
+    <p class="aboutpara2">Three Months of learning experience for subjects like <b>HTML Language, CSS & BootStrap ,after this I will learning JavaScript.</b></p>
+</body>
+</html>
+<script>
+    var web = document.getElementById("webcanva");
+    var can = web.getContext("2d");
+    var gra = can.createLinearGradient(100,300,500,200);
+    gra.addColorStop(0,"red");
+    gra.addColorStop(0.5,"blue");
+    gra.addColorStop(0.6,"red");
+    can.font = "23px Arial";
+    can.fillStyle = gra;
+    can.fillText("ABOUT ME",25,25);
+</script>
